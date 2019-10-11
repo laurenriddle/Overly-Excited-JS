@@ -22,7 +22,7 @@ function addExcitement(theWordArray) {
             Otherwise, just concatenate the word itself.
          */
 
-        if (i % 3 === 0) {
+        if ((i - 2) % 3 === 0) {
             buildMeUp += `${theWordArray[i]}! `
         } else {
             // Concatenate the new word onto buildMeUp

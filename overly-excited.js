@@ -23,7 +23,7 @@ function addExcitement(theWordArray, character, int) {
          */
 
         if ((i - 2) % 3 === 0) {
-            buildMeUp += `${theWordArray[i]}${character} `
+            buildMeUp += `${theWordArray[i]}${character.repeat(int)} `
         } else {
             // Concatenate the new word onto buildMeUp
             buildMeUp += `${theWordArray[i]} `
@@ -34,4 +34,4 @@ function addExcitement(theWordArray, character, int) {
 }
 
 // Invoke the function and pass in the array
-addExcitement(sentence, "?", 4)
+addExcitement(sentence, "*", 4)
